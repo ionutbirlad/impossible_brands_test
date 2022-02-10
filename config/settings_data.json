@@ -7,7 +7,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to Impossible Brands Test Store!",
+              "text": "Welcome to Impossible Brands Test Store edited from my local machine!",
               "color_scheme": "background-1",
               "link": ""
             }
