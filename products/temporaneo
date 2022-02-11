@@ -1,0 +1,23 @@
+mutation {
+  Product0: productCreate(input: {
+    title: First product
+  }) {
+    product {
+      id
+    }
+  }
+  Product1: productCreate(input: {
+    title: Second product
+  }) {
+    product {
+      id
+    }
+  }
+  Product2: productCreate(input: {
+    title: Third product
+  }) {
+    product {
+      id
+    }
+  }
+}

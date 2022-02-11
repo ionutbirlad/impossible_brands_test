@@ -1,4 +1,4 @@
-[
+export const products = [
   {
     "title": "First product",
     "description": "First product description"
