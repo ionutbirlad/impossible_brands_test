@@ -1,21 +1,27 @@
 import { baseAdminApi } from './APIs.js'
 import './dotenv.config.js'
-import { products, variants } from './products.js'
+import { products } from './products.js'
 
-
-async function fetchProducts() {
+async function fetchProducts(payload) {
   const query = `mutation productCreate($input: ProductInput!, $media: [CreateMediaInput!]) {
-      ${products.map(product => {
-        return `Product${products.indexOf(product)}: productCreate(input: $input, media: $media) {
-                  product {
-                    id
-                  }
-                }`
-      }).join(" ")}
+    Product${payload.index}: productCreate(input: $input, media: $media) {
+      product {
+        id
+      }
+    }
   }`
-  const variables = variants
+  const variables = {
+    input: payload.input,
+    media: payload.media
+  }
 
-  baseAdminApi(query, variables)
+  baseAdminApi({ query, variables })
 }
 
-fetchProducts()
+products.forEach(p => {
+  fetchProducts({
+    index: products.indexOf(p),
+    input: p.input,
+    media: p.media
+  })
+})
