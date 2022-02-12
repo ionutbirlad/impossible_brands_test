@@ -1,7 +1,5 @@
-export const products = [
-  {
-    "media": [
-      {
+export const products = [{
+    "media": [{
         "mediaContentType": "IMAGE",
         "originalSource": "https://media.istockphoto.com/photos/red-tshirt-clothes-picture-id685779142?s=612x612"
       },
@@ -14,17 +12,18 @@ export const products = [
         "originalSource": "https://media.istockphoto.com/photos/green-tshirt-clothes-picture-id685724606?s=612x612"
       },
     ],
-  "input": {
-    "title": "T-shirt",
+    "input": {
+      "title": "Awesome T-shirt",
+      "descriptionHtml": "Basic cotton T-shirt available in different colors and sizes.",
       "metafields": {
-        "description": ""
+        "description": "Basic cotton T-shirt available in different colors and sizes.",
+        "type": "T-shirt"
       },
       "published": true,
       "options": [
         "Color", "Size", "Material"
       ],
-      "variants": [
-        {
+      "variants": [{
           "mediaSrc": ["https://media.istockphoto.com/photos/red-tshirt-clothes-picture-id685779142?s=612x612"],
           "options": ["Red", "M", "Cotton"]
         },
@@ -52,28 +51,28 @@ export const products = [
     }
   },
   {
-    "media": [
-      {
+    "media": [{
         "mediaContentType": "IMAGE",
-        "originalSource": "https://media.istockphoto.com/photos/purple-backpack-isolated-with-path-picture-id456137341?s=612x612"
+        "originalSource": "https://media.istockphoto.com/photos/purple-canvas-tote-bag-isolated-on-white-background-with-clipping-picture-id1153660150?s=612x612"
       },
       {
         "mediaContentType": "IMAGE",
         "originalSource": "https://media.istockphoto.com/photos/woman-is-holding-bag-canvas-fabric-for-mockup-blank-template-picture-id1148884819?s=612x612"
       },
     ],
-  "input": {
-    "title": "Bag",
+    "input": {
+      "title": "Fantastic bag",
+      "descriptionHtml": "Unique bag avaible in 2 fantastic colors, white and purple!",
       "metafields": {
-        "description": ""
+        "description": "Unique bag avaible in 2 fantastic colors, white and purple!",
+        "type": "Bag"
       },
       "published": true,
       "options": [
         "Color", "Size"
       ],
-      "variants": [
-        {
-          "mediaSrc": ["https://media.istockphoto.com/photos/purple-backpack-isolated-with-path-picture-id456137341?s=612x612"],
+      "variants": [{
+          "mediaSrc": ["https://media.istockphoto.com/photos/purple-canvas-tote-bag-isolated-on-white-background-with-clipping-picture-id1153660150?s=612x612"],
           "options": ["Purple", "M"]
         },
         {
