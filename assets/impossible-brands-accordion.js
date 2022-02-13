@@ -2,7 +2,7 @@ const template = document.createElement('template');
 template.innerHTML = `
 <style>
 #toggle-info {
-  background-color: #eee;
+  background-color: #F3F3F3;
   color: #444;
   cursor: pointer;
   padding: 18px;
