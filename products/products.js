@@ -15,6 +15,7 @@ export const products = [{
   "input": {
     "title": "Awesome T-shirt",
     "descriptionHtml": "Basic cotton T-shirt available in different colors and sizes.",
+    "productType": "T-shirt",
     "metafields": {
       "description": "Basic cotton T-shirt available in different colors and sizes.",
       "type": "T-shirt"
@@ -63,6 +64,7 @@ export const products = [{
   "input": {
     "title": "Fantastic bag",
     "descriptionHtml": "Unique bag avaible in 2 fantastic colors, white and purple!",
+    "productType": "Bag",
     "metafields": {
       "description": "Unique bag avaible in 2 fantastic colors, white and purple!",
       "type": "Bag"
