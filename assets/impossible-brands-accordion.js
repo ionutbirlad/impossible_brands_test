@@ -46,7 +46,11 @@ template.innerHTML = `
   class ImpossibleBrandsAccordion extends HTMLElement {
     constructor() {
       super();
-
+      this.showInfo = false;
+      this.attachShadow({ mode: 'open' });
+      this.shadowRoot.appendChild(template.contentEditable.cloneNode(true));
+      this.shadowRoot.querySelector('#toggle-info').innerText = this.getAttribute('section');
+      this.shadowRoot.querySelector('.info').innerText = this.getAttribute('content');
     }
   }
 
