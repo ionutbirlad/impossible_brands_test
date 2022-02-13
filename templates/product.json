@@ -88,19 +88,15 @@
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
+    "impossible-brands-accordion": {
+      "type": "impossible-brands-accordion",
       "blocks": {
-        "image-with-text-0": {
+        "impossible-brands-accordion-0": {
           "type": "heading"
-        },
-        "image-with-text-1": {
-          "type": "text"
         }
       },
       "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
+        "impossible-brands-accordion-0"
       ],
       "settings": {
         "height": "small",
@@ -147,7 +143,7 @@
   },
   "order": [
     "main",
-    "image-with-text",
+    "impossible-brands-accordion",
     "multicolumn",
     "product-recommendations"
   ]
