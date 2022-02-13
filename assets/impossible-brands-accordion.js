@@ -52,6 +52,30 @@ template.innerHTML = `
       this.shadowRoot.querySelector('#toggle-info').innerText = this.getAttribute('section');
       this.shadowRoot.querySelector('.info').innerText = this.getAttribute('content');
     }
+
+    toggleInfo() {
+      this.showInfo = !this.showInfo;
+  
+      const info = this.shadowRoot.querySelector('.info');
+      const toggleTrigger = this.shadowRoot.querySelector('#toggle-info');
+      
+      if (this.showInfo) {
+        this.shadowRoot.querySelector('#toggle-info').classList.add('active');
+        info.classList.add('info-padding');
+        info.style.maxHeight = info.scrollHeight + "px";
+      } else {
+        this.shadowRoot.querySelector('#toggle-info').classList.remove('active');
+        info.classList.remove('info-padding');
+        info.style.maxHeight = null;
+      }
+    }
+
+    connectedCallback() {
+      this.shadowRoot.querySelector('#toggle-info').addEventListener('click', () => this.toggleInfo());
+    }
+    disconnectedCallback() {
+      this.shadowRoot.querySelector('#toggle-info').removeEventListener();
+    }
   }
 
   window.customElements.define('impossible-brands-accordion', ImpossibleBrandsAccordion);
