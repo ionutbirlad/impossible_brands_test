@@ -63,7 +63,7 @@ template.innerHTML = `
       this.showInfo = !this.showInfo;
   
       const info = this.shadowRoot.querySelector('.info');
-      const toggleTrigger = this.shadowRoot.querySelector('#toggle-info');
+      // const toggleTrigger = this.shadowRoot.querySelector('#toggle-info');
       
       if (this.showInfo) {
         this.shadowRoot.querySelector('#toggle-info').classList.add('active');
