@@ -16,12 +16,23 @@
 
 <script src="{{ 'impossible-brands-accordion.js' | asset_url }}" defer="defer"></script>
 
-{% assign expandableSections = 'description,type,variants' | split: ',' %}
+{% assign expandableSections = 'description,type,options' | split: ',' %}
 
 <div class="impossible-brands-accordion impossible-brands-accordion--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
   {% for section in expandableSections %}
-    <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ product[section] }}">
-    </impossible-brands-accordion>
+    {% case section %}
+      {% when 'options' %}
+        {% capture aaa %}
+          {% for option in product.options %}
+            Available {{ option | downcase }}s: {{ product.options_by_name[option].values | join: " / " }}
+          {% endfor %}
+        {% endcapture %}
+        <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ aaa | strip_html | strip }}">
+        </impossible-brands-accordion>
+      {% else %}
+        <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ product[section] }}">
+        </impossible-brands-accordion>
+    {% endcase %}
   {% endfor %}
 </div>
 
