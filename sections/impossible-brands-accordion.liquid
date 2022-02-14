@@ -16,18 +16,11 @@
 
 <script src="{{ 'impossible-brands-accordion.js' | asset_url }}" defer="defer"></script>
 
-{% assign expandableSections = 'Description, Product type, Available variants' | split: ',' %}
-{% assign aaa = 'apple' %}
-{% assign bbb = 'orange' %}
-{% assign ccc = 'castagna' %}
-{%- capture rawFruits -%}
-  {{ aaa }}, {{ bbb }}, {{ ccc }}
-{%- endcapture -%}
-{% assign fruits = rawFruits | split: ',' %}
+{% assign expandableSections = 'description,type,variants' | split: ',' %}
 
 <div class="impossible-brands-accordion impossible-brands-accordion--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
   {% for section in expandableSections %}
-    <impossible-brands-accordion section="{{ section }}" content="lorem ipsum dolor lorem ipsum dolor sit amet">
+    <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ product[section] }}">
     </impossible-brands-accordion>
   {% endfor %}
 </div>
