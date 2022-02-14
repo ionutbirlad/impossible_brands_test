@@ -27,7 +27,7 @@
             Available {{ option | downcase }}s: {{ product.options_by_name[option].values | join: " / " }}
           {% endfor %}
         {% endcapture %}
-        <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ availableOptions | strip_html | strip }}">
+        <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ availableOptions | strip }}">
         </impossible-brands-accordion>
       {% else %}
         <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ product[section] }}">
