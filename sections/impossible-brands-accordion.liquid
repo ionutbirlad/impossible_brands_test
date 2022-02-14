@@ -22,12 +22,12 @@
   {% for section in expandableSections %}
     {% case section %}
       {% when 'options' %}
-        {% capture aaa %}
+        {% capture availableOptions %}
           {% for option in product.options %}
             Available {{ option | downcase }}s: {{ product.options_by_name[option].values | join: " / " }}
           {% endfor %}
         {% endcapture %}
-        <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ aaa | strip_html | strip }}">
+        <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ availableOptions | strip_html | strip }}">
         </impossible-brands-accordion>
       {% else %}
         <impossible-brands-accordion section="{{ section | capitalize }}" content="{{ product[section] }}">
