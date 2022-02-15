@@ -274,6 +274,11 @@
     "video": {
       "load_video": "Load video: {{ description }}"
     },
+    "impossible-brands": {
+      "description": "Description",
+      "type": "Type",
+      "options": "Options"
+    },
     "slideshow": {
       "load_slide": "Load slide",
       "previous_slideshow": "Previous slide",

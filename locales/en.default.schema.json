@@ -1255,7 +1255,10 @@
     "IB-accordion": {
       "name": "Custom Impossible Brands Accordion",
       "settings": {
-
+        "description": {
+          "label": "Accordion item text",
+          "info": "Accordion item"
+        }
       },
       "presets": {
         "name": "Custom Impossible Brands Accordion"
