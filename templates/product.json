@@ -72,7 +72,7 @@
         "padding_bottom": 12
       }
     },
-    "1644946344f4c3eea4": {
+    "impossible-brands": {
       "type": "impossible-brands",
       "settings": {
       }
@@ -168,7 +168,7 @@
   },
   "order": [
     "main",
-    "1644946344f4c3eea4",
+    "impossible-brands",
     "image-with-text",
     "multicolumn",
     "product-recommendations"
