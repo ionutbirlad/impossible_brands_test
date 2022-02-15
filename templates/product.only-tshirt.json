@@ -81,6 +81,7 @@
       "type": "video",
       "settings": {
         "heading": "",
+        "cover_image": "shopify:\/\/shop_images\/Screenshot_from_2022-02-15_21-28-04.png",
         "video_url": "https:\/\/www.youtube.com\/watch?v=JdZTlGK--QQ",
         "description": "",
         "full_width": true,
