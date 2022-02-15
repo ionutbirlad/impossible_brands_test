@@ -26,27 +26,33 @@ export const products = [{
     ],
     "variants": [{
         "mediaSrc": ["https://media.istockphoto.com/photos/man-posing-with-blank-red-shirt-picture-id513532929?s=2048x2048"],
-        "options": ["Red", "M", "Cotton"]
+        "options": ["Red", "M", "Cotton"],
+        "price": "14.99"
       },
       {
         "mediaSrc": ["https://media.istockphoto.com/photos/man-posing-with-blank-red-shirt-picture-id513532929?s=2048x2048"],
-        "options": ["Red", "L", "Cotton"]
+        "options": ["Red", "L", "Cotton"],
+        "price": "11.99"
       },
       {
         "mediaSrc": ["https://media.istockphoto.com/photos/man-posing-with-blank-navy-blue-shirt-picture-id518593821?s=2048x2048"],
-        "options": ["Blue", "M", "Cotton"]
+        "options": ["Blue", "M", "Cotton"],
+        "price": "14.99"
       },
       {
         "mediaSrc": ["https://media.istockphoto.com/photos/man-posing-with-blank-navy-blue-shirt-picture-id518593821?s=2048x2048"],
-        "options": ["Blue", "L", "Cotton"]
+        "options": ["Blue", "L", "Cotton"],
+        "price": "14.99"
       },
       {
         "mediaSrc": ["https://media.istockphoto.com/photos/man-posing-with-blank-green-shirt-picture-id515838111?s=2048x2048"],
-        "options": ["Green", "M", "Cotton"]
+        "options": ["Green", "M", "Cotton"],
+        "price": "14.99"
       },
       {
         "mediaSrc": ["https://media.istockphoto.com/photos/man-posing-with-blank-green-shirt-picture-id515838111?s=2048x2048"],
-        "options": ["Green", "L", "Cotton"]
+        "options": ["Green", "L", "Cotton"],
+        "price": "12.99"
       },
     ]
   }
@@ -75,11 +81,13 @@ export const products = [{
     ],
     "variants": [{
         "mediaSrc": ["https://media.istockphoto.com/photos/violet-dark-elegant-leather-tote-shoulder-bag-isolated-white-picture-id1304053555?s=2048x2048"],
-        "options": ["Purple", "M"]
+        "options": ["Purple", "M"],
+        "price": "29.99"
       },
       {
         "mediaSrc": ["https://media.istockphoto.com/photos/white-shopping-bag-picture-id535634791?s=2048x2048"],
-        "options": ["White", "M"]
+        "options": ["White", "M"],
+        "price": "29.99"
       },
     ]
   }
