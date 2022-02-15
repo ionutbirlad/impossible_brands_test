@@ -1252,6 +1252,15 @@
         "name": "Image with text"
       }
     },
+    "IB-accordion": {
+      "name": "Custom Impossible Brands Accordion",
+      "settings": {
+
+      },
+      "presets": {
+        "name": "Custom Impossible Brands Accordion"
+      }
+    },
     "main-article": {
       "name": "Blog post",
       "blocks": {
