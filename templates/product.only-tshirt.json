@@ -77,13 +77,14 @@
       "settings": {
       }
     },
-    "16449539796e62ac4c": {
+    "tshirt-commercial-video": {
       "type": "video",
       "settings": {
-        "heading": "Video",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "heading": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=JdZTlGK--QQ",
+        "cover_image": "https://img01.ztat.net/article/spp-media-p1/b1e4d95cd1494cdab1a97335c7f0040b/a8868f3af7eb44329a689c5cde5f988d.jpg?imwidth=762",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -181,7 +182,7 @@
   "order": [
     "main",
     "impossible-brands",
-    "16449539796e62ac4c",
+    "tshirt-commercial-video",
     "image-with-text",
     "multicolumn",
     "product-recommendations"
