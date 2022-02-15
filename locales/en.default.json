@@ -275,9 +275,9 @@
       "load_video": "Load video: {{ description }}"
     },
     "impossible-brands": {
-      "description": "Description",
-      "type": "Type",
-      "options": "Options"
+      "description": "Product description",
+      "type": "Type of product",
+      "options": "Available options and variants"
     },
     "slideshow": {
       "load_slide": "Load slide",
