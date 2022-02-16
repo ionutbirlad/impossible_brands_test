@@ -9,18 +9,24 @@ This repo is connected to [Impossible_Brands_Test_Store](https://impossible-bran
 
 The features to implement were the following:
 
-1. ```
-In the product page, implement an accordion component having 3 expandable
-sections with the following contents:
-    ○ Section 1: The description of the product
-    ○ Section 2: The type of the product
-    ○ Section 3: The available colors, size and materials of the product
+#### Task 1
+
+In the product page, implement an accordion component having 3 expandable sections with the following contents:
+
+○ Section 1: The description of the product
+
+○ Section 2: The type of the product
+
+○ Section 3: The available colors, size and materials of the product
+    
 The component must be implemented by using the Web Components.
-```
-2. ```
-(Optional) Only in the product page of T-shirt, implement on the top of the page a
-video that starts automatically when the page fully loads. You can use any video.
-```
+
+#### Task 2
+
+(Optional) Only in the product page of T-shirt, implement on the top of the page a video that starts automatically when the page fully loads.
+
+You can use any video.
+
 To achieve this I've used the following:
 
 
