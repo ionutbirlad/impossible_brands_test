@@ -2,7 +2,7 @@ import { baseAdminApi } from './APIs.js'
 import './dotenv.config.js'
 import { products } from './products.js'
 
-async function fetchProducts(payload) {
+async function createProducts(payload) {
   const query = `mutation productCreate($input: ProductInput!, $media: [CreateMediaInput!]) {
     Product${payload.index}: productCreate(input: $input, media: $media) {
       product {
@@ -19,7 +19,7 @@ async function fetchProducts(payload) {
 }
 
 products.forEach(p => {
-  fetchProducts({
+  createProducts({
     index: products.indexOf(p),
     input: p.input,
     media: p.media
