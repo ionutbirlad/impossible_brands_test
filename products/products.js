@@ -11,14 +11,23 @@ export const products = [{
       "mediaContentType": "IMAGE",
       "originalSource": "https://media.istockphoto.com/photos/man-posing-with-blank-green-shirt-picture-id515838111?s=2048x2048"
     },
+    // {
+    //   "mediaContentType": "EXTERNAL_VIDEO",
+    //   "id": "JdZTlGK--QQ",
+    //   "host": "YOUTUBE",
+    //   "previewImage": "shopify:\/\/shop_images\/pexels-sorapong-chaipanya-4530798.jpg",
+    //   "originalSource": "https:\/\/www.youtube.com\/watch?v=JdZTlGK--QQ"
+    // },
   ],
   "input": {
     "title": "Awesome T-shirt",
     "descriptionHtml": "Basic cotton T-shirt available in different colors and sizes.",
     "productType": "T-shirt",
     "metafields": {
-      "description": "Basic cotton T-shirt available in different colors and sizes.",
-      "type": "T-shirt"
+      "namespace": "externalVideo",
+      "key": "video",
+      "value": "https:\/\/www.youtube.com\/watch?v=JdZTlGK--QQ",
+      "type": "single_line_text_field"
     },
     "published": true,
     "options": [

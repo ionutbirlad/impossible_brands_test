@@ -82,7 +82,7 @@
       "settings": {
         "heading": "",
         "cover_image": "shopify:\/\/shop_images\/pexels-sorapong-chaipanya-4530798.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=JdZTlGK--QQ",
+        "video_url": "{{ product.metafields.externalVideo.video | metafield_tag }}",
         "description": "",
         "full_width": true,
         "color_scheme": "background-1",
