@@ -50,6 +50,6 @@ that it can be loaded only when needed inside the relative schema.
 
 Considering there's already a section dedicated to the videos in the starting theme, I used that to implement a video only in the T-shirt prdouct view.
 
-I created another template dedicated to the T-shirt to avoid loading js files to the other products ([product.only-tshirt.json](https://github.com/ionutbirlad/impossible_brands_test/blob/master/templates/product.only-tshirt.json)). Here I check if the metafield with the external video link
+I created another template dedicated to the T-shirt to avoid loading js files to the other products ([product.only-tshirt.json](https://github.com/ionutbirlad/impossible_brands_test/blob/master/templates/product.only-tshirt.json)). Here I check if the metafield with the external video link is avalable.
 
-is avalable. If true section is rendered, otherwise it won't.
+If true section is rendered, otherwise it won't.
