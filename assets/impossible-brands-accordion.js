@@ -11,11 +11,12 @@ template.innerHTML = `
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
+  background-position: center;
+  transition: background 0.8s;
 }
 
 .active, #toggle-info:hover {
-  background-color: #ccc;
+  background: #ccc radial-gradient(circle, transparent 1%, #ccc 1%) center/15000%;
 }
 
 #toggle-info:after {
@@ -28,6 +29,12 @@ template.innerHTML = `
 
 #toggle-info.active:after {
   content: "\\2212";
+}
+
+#toggle-info:active {
+  background-color: #d4d4d4;
+  background-size: 100%;
+  transition: background 0s;
 }
 
 .info {
